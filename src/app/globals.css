@@ -1,0 +1,32 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #2563EB;
+  --color-primary-dark: #1D4ED8;
+  --color-accent: #7C3AED;
+  --color-bg-start: #0F172A;
+  --color-bg-end: #020617;
+}
+
+:root {
+  --background: #020617;
+  --foreground: #F8FAFC;
+}
+
+@layer base {
+  body {
+    background: linear-gradient(180deg, var(--color-bg-start) 0%, var(--color-bg-end) 100%);
+    background-attachment: fixed;
+    color: var(--foreground);
+    @apply antialiased min-h-screen font-sans;
+  }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500;
+  }
+  .bg-gradient-primary {
+    @apply bg-gradient-to-r from-blue-600 to-purple-600;
+  }
+}
