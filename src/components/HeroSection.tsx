@@ -17,7 +17,7 @@ export default function HeroSection() {
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   // Premium text stagger reveal
-  const title = "We Build High-Converting Websites for Modern Businesses".split(" ");
+  const title = "We Build High-Converting Websites for Modern Businesses not only buildiong but we create the best websites in less price ".split(" ");
 
   return (
     <section 
