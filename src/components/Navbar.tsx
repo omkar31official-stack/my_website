@@ -34,10 +34,10 @@ export default function Navbar() {
       <div className="container mx-auto px-6 sm:px-8 md:px-16 lg:px-24 flex items-center justify-between">
         <Link href="/" className="flex items-center gap-2 group">
           <div className="w-8 h-8 rounded-lg bg-gradient-primary flex items-center justify-center transform group-hover:rotate-12 transition-transform">
-            <span className="font-bold text-lg text-white font-outfit">Y</span>
+            <span className="font-bold text-lg text-white font-outfit">N</span>
           </div>
           <span className="text-xl font-bold font-outfit tracking-wide text-white">
-            Your Company
+            NNOMIX
           </span>
         </Link>
 
@@ -71,13 +71,13 @@ export default function Navbar() {
 
       {/* Mobile Nav */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-slate-900 border-b border-white/10 px-6 sm:px-8 py-6 flex flex-col gap-4 shadow-2xl">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-slate-900/95 backdrop-blur-md border-b border-white/10 px-6 sm:px-8 py-10 flex flex-col gap-8 shadow-2xl min-h-[50vh]">
           {navLinks.map((link) => (
             <Link
               key={link.name}
               href={link.href}
               onClick={() => setIsMobileMenuOpen(false)}
-              className="text-lg font-medium text-slate-300 hover:text-white py-3 border-b border-white/5 last:border-0"
+              className="text-xl font-medium text-slate-300 hover:text-white py-4 border-b border-white/5 last:border-0 tracking-wide text-center"
             >
               {link.name}
             </Link>
@@ -85,7 +85,7 @@ export default function Navbar() {
           <Link
             href="/book"
             onClick={() => setIsMobileMenuOpen(false)}
-            className="mt-4 text-center px-6 py-4 rounded-xl bg-gradient-primary text-white text-lg font-semibold flex items-center justify-center gap-2 shadow-lg shadow-blue-500/20"
+            className="mt-6 text-center px-6 py-5 rounded-2xl bg-gradient-primary text-white text-xl font-bold flex items-center justify-center gap-2 shadow-lg shadow-red-500/25"
           >
             Book a Meeting
           </Link>

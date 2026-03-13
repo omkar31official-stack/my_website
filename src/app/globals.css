@@ -1,15 +1,15 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: #2563EB;
-  --color-primary-dark: #1D4ED8;
-  --color-accent: #7C3AED;
-  --color-bg-start: #0F172A;
-  --color-bg-end: #020617;
+  --color-primary: #8b0000;      /* Dark Red */
+  --color-primary-dark: #4a0404; /* Very Dark Red */
+  --color-accent: #b91c1c;       /* Red 700 */
+  --color-bg-start: #0a0000;     /* Extremely dark red-tinted black */
+  --color-bg-end: #000000;       /* Black */
 }
 
 :root {
-  --background: #020617;
+  --background: #000000;
   --foreground: #F8FAFC;
 }
 
@@ -24,9 +24,9 @@
 
 @layer utilities {
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-purple-500;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-700;
   }
   .bg-gradient-primary {
-    @apply bg-gradient-to-r from-blue-600 to-purple-600;
+    @apply bg-gradient-to-r from-red-600 to-red-800;
   }
 }

@@ -12,10 +12,10 @@ export default function FloatingButtons() {
         transition={{ delay: 1, duration: 0.5, type: "spring" }}
         whileHover={{ scale: 1.1, y: -5 }}
         whileTap={{ scale: 0.95 }}
-        href="https://instagram.com"
+        href="https://instagram.com/nnomix_4"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-14 h-14 rounded-full bg-gradient-to-tr from-pink-500 via-purple-500 to-orange-500 shadow-lg shadow-purple-500/20 flex items-center justify-center text-white relative group"
+        className="w-14 h-14 rounded-full bg-gradient-to-tr from-[#3a0000] via-red-900 to-[#5a0000] border border-red-800/50 shadow-[0_0_20px_rgba(139,0,0,0.3)] flex items-center justify-center text-red-200 relative group hover:text-white"
         aria-label="Instagram"
       >
         <Instagram size={24} />
@@ -33,7 +33,7 @@ export default function FloatingButtons() {
         href="https://wa.me/7411822301"
         target="_blank"
         rel="noopener noreferrer"
-        className="w-14 h-14 rounded-full bg-green-500 shadow-lg shadow-green-500/20 flex items-center justify-center text-white relative group"
+        className="w-14 h-14 rounded-full bg-gradient-to-tr from-[#052e16] to-green-900 shadow-[0_0_20px_rgba(22,101,52,0.4)] border border-green-800/50 flex items-center justify-center text-green-200 relative group hover:text-white"
         aria-label="WhatsApp"
       >
         <MessageCircle size={24} />

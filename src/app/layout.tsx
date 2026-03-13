@@ -9,7 +9,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit" });
 
 export const metadata: Metadata = {
-  title: "Your Company | Premium Web Development Agency",
+  title: "NNOMIX | Premium Web Development Agency",
   description: "We Build High-Converting Websites for Modern Businesses",
 };
 
@@ -21,7 +21,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="scroll-smooth">
       <body
-        className={`${inter.variable} ${outfit.variable} font-sans antialiased bg-[#020617] text-slate-50 min-h-screen flex flex-col`}
+        className={`${inter.variable} ${outfit.variable} font-sans antialiased bg-black text-slate-50 min-h-screen flex flex-col`}
       >
         <Navbar />
         <main className="flex-grow">{children}</main>

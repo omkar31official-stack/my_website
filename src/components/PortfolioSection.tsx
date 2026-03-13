@@ -9,7 +9,7 @@ export default function PortfolioSection() {
     {
       title: "urban-spice premium",
       category: "Fine Dining Website",
-      color: "from-blue-600 to-indigo-900",
+      color: "from-red-600 to-red-900",
       image: "https://images.unsplash.com/photo-1514362545857-3bc16c4c7d1b?q=80&w=800&auto=format&fit=crop",
       /* PASTE YOUR LIVE WEBSITE LINK HERE 👇 */
       liveLink: "https://urban-spice-premium.vercel.app",
@@ -17,7 +17,7 @@ export default function PortfolioSection() {
     {
       title: "Urban-spice above medium",
       category: "Coffee Shop & Bakery",
-      color: "from-orange-500 to-amber-700",
+      color: "from-rose-500 to-rose-800",
       image: "https://images.unsplash.com/photo-1554118811-1e0d58224f24?q=80&w=800&auto=format&fit=crop",
       /* PASTE YOUR LIVE WEBSITE LINK HERE 👇 */
       liveLink: "https://urban-spice-med2.vercel.app",
@@ -25,7 +25,7 @@ export default function PortfolioSection() {
     {
       title: "The cafe basic website ",
       category: "Brunch & Bistro",
-      color: "from-emerald-600 to-teal-900",
+      color: "from-pink-600 to-pink-900",
       image: "https://images.unsplash.com/photo-1481833761820-0509d3217039?q=80&w=800&auto=format&fit=crop",
       /* PASTE YOUR LIVE WEBSITE LINK HERE 👇 */
       liveLink: "https://diggincafe.netlify.app",
@@ -33,7 +33,7 @@ export default function PortfolioSection() {
     {
       title: "Spice Route",
       category: "Asian Fusion Restaurant",
-      color: "from-red-600 to-rose-900",
+      color: "from-red-500 to-red-800",
       image: "https://images.unsplash.com/photo-1552566626-52f8b828add9?q=80&w=800&auto=format&fit=crop",
       /* PASTE YOUR LIVE WEBSITE LINK HERE 👇 */
       liveLink: "#",
@@ -41,7 +41,7 @@ export default function PortfolioSection() {
     {
       title: "Ocean Blue",
       category: "Seafood & Grill",
-      color: "from-cyan-500 to-blue-800",
+      color: "from-orange-600 to-orange-900",
       image: "https://images.unsplash.com/photo-1615141982883-c7ad0e69fd62?q=80&w=800&auto=format&fit=crop",
       /* PASTE YOUR LIVE WEBSITE LINK HERE 👇 */
       liveLink: "#",
@@ -49,7 +49,7 @@ export default function PortfolioSection() {
   ];
 
   return (
-    <section id="portfolio" className="py-24 md:py-32 bg-[#020617] relative border-t border-white/5">
+    <section id="portfolio" className="py-28 md:py-36 bg-black relative border-t border-white/5">
       <div className="container mx-auto px-6 sm:px-8 md:px-16 lg:px-24">
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-8">
           <div className="max-w-2xl">
@@ -110,20 +110,20 @@ export default function PortfolioSection() {
               <div className={`p-8 sm:p-10 bg-slate-900 flex flex-col justify-between ${idx === 0 || idx === 3 ? "md:w-2/5" : "flex-1"
                 }`}>
                 <div>
-                  <div className="text-sm font-bold text-blue-400 mb-3 tracking-wider uppercase">
+                  <div className="text-sm font-bold text-red-400 mb-3 tracking-wider uppercase">
                     {project.category}
                   </div>
-                  <h3 className="text-2xl sm:text-3xl font-bold text-white font-outfit mb-4 group-hover:text-blue-400 transition-colors">
+                  <h3 className="text-2xl sm:text-3xl font-bold text-white font-outfit mb-4 group-hover:text-red-400 transition-colors">
                     {project.title}
                   </h3>
                 </div>
-                <div className="mt-8 flex-shrink-0">
+                <div className="mt-10 flex-shrink-0">
                   {/* User Placeholder Link */}
                   <a
                     href={project.liveLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="inline-flex items-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-500 hover:to-purple-500 border border-white/10 text-base text-white font-semibold transition-all group/btn w-full sm:w-auto justify-center shadow-lg shadow-blue-500/20 hover:shadow-blue-500/40 hover:scale-[1.02] active:scale-95"
+                    className="inline-flex items-center gap-2 px-6 py-4 rounded-xl bg-gradient-to-r from-red-600 to-red-800 hover:from-red-500 hover:to-red-700 border border-white/10 text-lg text-white font-bold transition-all group/btn w-full sm:w-auto justify-center shadow-lg shadow-red-500/20 hover:shadow-red-500/40 hover:scale-[1.02] active:scale-95"
                   >
                     View Website
                     <ExternalLink size={16} className="group-hover/btn:translate-x-1 group-hover/btn:-translate-y-1 transition-transform" />

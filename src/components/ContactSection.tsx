@@ -6,31 +6,31 @@ import { Mail, MessageCircle, Instagram, MapPin } from "lucide-react";
 export default function ContactSection() {
   const contactMethods = [
     {
-      icon: <MessageCircle size={32} className="text-green-500" />,
+      icon: <MessageCircle size={32} className="text-red-700" />,
       title: "Chat on WhatsApp",
       value: "+91 7411822301",
       link: "https://wa.me/7411822301",
-      bgClass: "hover:border-green-500/50 hover:bg-green-500/5",
+      bgClass: "hover:border-red-800/50 hover:bg-red-900/10",
     },
     {
-      icon: <Instagram size={32} className="text-pink-500" />,
+      icon: <Instagram size={32} className="text-red-700" />,
       title: "Follow on Instagram",
-      value: "@yourcompany",
-      link: "https://instagram.com/yourcompany",
-      bgClass: "hover:border-pink-500/50 hover:bg-pink-500/5",
+      value: "@nnomix_4",
+      link: "https://instagram.com/nnomix_4",
+      bgClass: "hover:border-red-800/50 hover:bg-red-900/10",
     },
     {
-      icon: <Mail size={32} className="text-blue-500" />,
+      icon: <Mail size={32} className="text-red-700" />,
       title: "Email Us",
-      value: "hello@yourcompany.com",
-      link: "mailto:hello@yourcompany.com",
-      bgClass: "hover:border-blue-500/50 hover:bg-blue-500/5",
+      value: "nnomix4@gmail.com",
+      link: "mailto:nnomix4@gmail.com",
+      bgClass: "hover:border-red-800/50 hover:bg-red-900/10",
     },
   ];
 
   return (
-    <section id="contact" className="py-24 md:py-32 bg-slate-950 border-t border-white/5 relative">
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[500px] bg-blue-900/10 blur-[150px] pointer-events-none" />
+    <section id="contact" className="py-28 md:py-36 bg-[#050000] border-t border-red-900/20 relative">
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-[500px] bg-red-900/10 blur-[150px] pointer-events-none" />
 
       <div className="container mx-auto px-6 sm:px-8 md:px-16 lg:px-24 relative z-10">
         <div className="max-w-3xl mx-auto text-center mb-16">
@@ -65,9 +65,9 @@ export default function ContactSection() {
               href={method.link}
               target="_blank"
               rel="noopener noreferrer"
-              className={`flex flex-col items-center text-center p-8 sm:p-10 rounded-[2rem] bg-slate-900/50 border border-white/5 transition-all duration-300 group shadow-lg hover:shadow-2xl ${method.bgClass}`}
+              className={`flex flex-col items-center text-center p-8 sm:p-10 rounded-[2rem] bg-black/60 border border-red-900/20 transition-all duration-300 group shadow-[0_0_30px_rgba(0,0,0,0.8)] hover:shadow-[0_0_40px_rgba(139,0,0,0.15)] ${method.bgClass}`}
             >
-              <div className="w-20 h-20 rounded-2xl bg-slate-950 border border-white/5 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-xl">
+              <div className="w-20 h-20 rounded-2xl bg-[#0a0000] border border-red-900/30 flex items-center justify-center mb-6 group-hover:scale-110 transition-transform shadow-xl">
                 {method.icon}
               </div>
               <h3 className="text-xl sm:text-2xl font-bold text-white font-outfit mb-2">{method.title}</h3>
@@ -83,7 +83,7 @@ export default function ContactSection() {
           transition={{ duration: 0.6, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
           className="mt-16 text-center"
         >
-          <a href="/book" className="inline-flex items-center justify-center w-full sm:w-auto px-8 py-4 sm:py-5 rounded-full bg-blue-600 text-white text-lg font-bold transition-all hover:bg-blue-500 hover:scale-105 active:scale-95 shadow-lg shadow-blue-500/25">
+          <a href="/book" className="inline-flex items-center justify-center w-full sm:w-auto px-10 py-5 rounded-full bg-gradient-to-r from-red-900 to-red-700 text-white text-lg font-bold transition-all hover:from-red-800 hover:to-red-600 hover:scale-105 active:scale-95 shadow-[0_0_30px_rgba(139,0,0,0.4)] border border-red-800/50">
             Or Schedule a Meeting Instantly
           </a>
         </motion.div>

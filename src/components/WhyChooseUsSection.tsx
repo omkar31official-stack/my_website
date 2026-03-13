@@ -5,12 +5,12 @@ import { Zap, MonitorSmartphone, Search, Target, DollarSign, Clock } from "lucid
 
 export default function WhyChooseUsSection() {
   const benefits = [
-    { title: "Fast Delivery", icon: <Clock size={24} className="text-blue-400" /> },
-    { title: "Modern Design", icon: <Zap size={24} className="text-purple-400" /> },
-    { title: "Mobile Friendly", icon: <MonitorSmartphone size={24} className="text-green-400" /> },
-    { title: "SEO Optimized", icon: <Search size={24} className="text-orange-400" /> },
-    { title: "Conversion Focused", icon: <Target size={24} className="text-red-400" /> },
-    { title: "Affordable Pricing", icon: <DollarSign size={24} className="text-emerald-400" /> },
+    { title: "Fast Delivery", icon: <Clock size={24} className="text-red-400" /> },
+    { title: "Modern Design", icon: <Zap size={24} className="text-rose-400" /> },
+    { title: "Mobile Friendly", icon: <MonitorSmartphone size={24} className="text-orange-400" /> },
+    { title: "SEO Optimized", icon: <Search size={24} className="text-pink-400" /> },
+    { title: "Conversion Focused", icon: <Target size={24} className="text-red-500" /> },
+    { title: "Affordable Pricing", icon: <DollarSign size={24} className="text-red-300" /> },
   ];
 
   const stats = [
@@ -20,9 +20,9 @@ export default function WhyChooseUsSection() {
   ];
 
   return (
-    <section className="py-24 md:py-32 bg-slate-950 relative overflow-hidden border-t border-white/5">
+    <section className="py-28 md:py-36 bg-slate-950 relative overflow-hidden border-t border-white/5">
       {/* Background decoration */}
-      <div className="absolute right-0 top-0 w-1/3 h-full bg-blue-900/10 blur-[150px] pointer-events-none" />
+      <div className="absolute right-0 top-0 w-1/3 h-full bg-red-900/10 blur-[150px] pointer-events-none" />
 
       <div className="container mx-auto px-6 sm:px-8 md:px-16 lg:px-24 relative z-10">
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 items-center">
@@ -72,7 +72,7 @@ export default function WhyChooseUsSection() {
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: 0.6 }}
             >
-              <a href="/book" className="text-blue-400 font-semibold flex items-center gap-2 hover:text-blue-300 transition-colors group">
+              <a href="/book" className="text-red-400 font-semibold flex items-center gap-2 hover:text-red-300 transition-colors group text-lg">
                 Schedule a Consultation 
                 <span className="group-hover:translate-x-1 transition-transform">→</span>
               </a>
@@ -85,9 +85,9 @@ export default function WhyChooseUsSection() {
             whileInView={{ opacity: 1, scale: 1 }}
             viewport={{ once: true }}
             transition={{ duration: 0.8, ease: [0.16, 1, 0.3, 1] }}
-            className="relative w-full lg:w-1/2 mt-12 lg:mt-0"
+            className="relative w-full lg:w-1/2 mt-16 md:mt-24 lg:mt-0"
           >
-            <div className="absolute inset-0 bg-blue-600/20 blur-[100px] rounded-full" />
+            <div className="absolute inset-0 bg-red-600/20 blur-[100px] rounded-full" />
             
             {/* Main Premium Image */}
             <div className="relative rounded-[2rem] overflow-hidden border border-white/10 shadow-2xl z-10 aspect-[4/3] group">
@@ -105,9 +105,9 @@ export default function WhyChooseUsSection() {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5, duration: 0.6 }}
-              className="absolute -bottom-8 -left-8 md:-left-12 z-20 bg-slate-900/90 backdrop-blur-xl border border-white/10 p-6 rounded-2xl shadow-2xl flex items-center gap-6"
+              className="absolute -bottom-10 -left-6 md:-left-12 z-20 bg-slate-900/90 backdrop-blur-xl border border-white/10 p-6 rounded-2xl shadow-2xl flex items-center gap-6"
             >
-              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-blue-500 to-purple-600 flex items-center justify-center border border-white/20">
+              <div className="w-16 h-16 rounded-full bg-gradient-to-br from-red-500 to-red-800 flex items-center justify-center border border-white/20">
                 <span className="text-2xl font-bold text-white font-outfit">100+</span>
               </div>
               <div>
@@ -122,9 +122,9 @@ export default function WhyChooseUsSection() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: 0.7, duration: 0.6 }}
-              className="absolute -top-8 -right-8 md:-right-4 z-20 bg-slate-900/90 backdrop-blur-xl border border-white/10 p-5 rounded-2xl shadow-xl flex items-center gap-4 hidden sm:flex"
+              className="absolute -top-10 -right-6 md:-right-4 z-20 bg-slate-900/90 backdrop-blur-xl border border-white/10 p-5 rounded-2xl shadow-xl flex items-center gap-4 hidden sm:flex"
             >
-              <div className="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center border border-emerald-500/30">
+              <div className="w-12 h-12 rounded-full bg-red-500/20 text-red-400 flex items-center justify-center border border-red-500/30">
                 <Clock className="w-6 h-6" />
               </div>
               <div>

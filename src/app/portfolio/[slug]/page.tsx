@@ -11,8 +11,8 @@ const getPortfolioData = (slug: string) => {
     "gourmet-bites": {
       title: "Gourmet Bites",
       category: "Fine Dining Experience",
-      theme: "from-blue-600 via-indigo-800 to-slate-900",
-      accent: "text-blue-400",
+      theme: "from-red-600 via-red-800 to-black",
+      accent: "text-red-400",
       description: "A Michelin-star level digital experience for a world-renowned fine dining establishment.",
       features: [
         { title: "Reservation System", icon: <Clock /> },
@@ -24,8 +24,8 @@ const getPortfolioData = (slug: string) => {
     "urban-cafe": {
       title: "Urban Cafe",
       category: "Coffee Shop & Bakery",
-      theme: "from-orange-500 via-amber-700 to-stone-900",
-      accent: "text-orange-400",
+      theme: "from-rose-500 via-rose-700 to-black",
+      accent: "text-rose-400",
       description: "A cozy and modern digital storefront for the city's most loved artisanal coffee shop.",
       features: [
         { title: "Online Ordering", icon: <Coffee /> },
@@ -37,8 +37,8 @@ const getPortfolioData = (slug: string) => {
     "rustic-spoon": {
       title: "The Rustic Spoon",
       category: "Brunch & Bistro",
-      theme: "from-emerald-600 via-teal-800 to-green-950",
-      accent: "text-emerald-400",
+      theme: "from-pink-600 via-pink-800 to-black",
+      accent: "text-pink-400",
       description: "Bringing the farm-to-table experience online with a fresh, airy, and inviting website.",
       features: [
         { title: "Seasonal Menus", icon: <Utensils /> },
@@ -50,8 +50,8 @@ const getPortfolioData = (slug: string) => {
     "spice-route": {
       title: "Spice Route",
       category: "Asian Fusion Restaurant",
-      theme: "from-red-600 via-rose-800 to-zinc-900",
-      accent: "text-red-400",
+      theme: "from-red-500 via-red-700 to-black",
+      accent: "text-red-500",
       description: "A fiery and vibrant web presence designed to showcase exotic flavors and a rich cultural heritage.",
       features: [
         { title: "Delivery Integration", icon: <Clock /> },
@@ -63,8 +63,8 @@ const getPortfolioData = (slug: string) => {
     "ocean-blue": {
       title: "Ocean Blue",
       category: "Seafood & Grill",
-      theme: "from-cyan-500 via-blue-700 to-slate-900",
-      accent: "text-cyan-400",
+      theme: "from-orange-600 via-orange-800 to-black",
+      accent: "text-orange-400",
       description: "A serene, ocean-inspired digital platform for a premium seafood dining destination.",
       features: [
         { title: "Fresh Catch Alerts", icon: <Star /> },
@@ -93,7 +93,7 @@ export default function PortfolioProjectPage({ params }: { params: Promise<{ slu
   const opacity = useTransform(scrollYProgress, [0, 0.5], [1, 0]);
 
   return (
-    <div ref={containerRef} className="min-h-[100svh] bg-[#020617] relative">
+    <div ref={containerRef} className="min-h-[100svh] bg-black relative">
       {/* Dynamic Parallax Hero */}
       <div className={`relative h-[80vh] w-full overflow-hidden flex items-center justify-center bg-gradient-to-br ${data.theme}`}>
         <motion.div style={{ y, opacity }} className="absolute inset-0 bg-black/40 z-10" />
@@ -145,7 +145,7 @@ export default function PortfolioProjectPage({ params }: { params: Promise<{ slu
       </div>
 
       {/* Content Section */}
-      <div className="relative z-30 bg-[#020617] border-t border-white/10 -mt-8 rounded-t-[3rem] pt-24 pb-32">
+      <div className="relative z-30 bg-black border-t border-white/10 -mt-8 rounded-t-[3rem] pt-24 pb-32">
         <div className="container mx-auto px-6 sm:px-8 md:px-16 lg:px-24">
           <div className="max-w-4xl mx-auto">
             <motion.h2 

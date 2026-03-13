@@ -24,10 +24,18 @@ export default function BookMeetingPage() {
   };
 
   return (
-    <div className="pt-32 md:pt-48 pb-24 md:pb-32 min-h-[100svh] bg-[#020617] relative overflow-hidden flex items-center">
-      {/* Background Orbs */}
-      <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-900/20 blur-[150px] pointer-events-none" />
-      <div className="absolute bottom-0 left-0 w-[400px] h-[400px] bg-purple-900/20 blur-[120px] pointer-events-none" />
+    <div className="pt-32 md:pt-48 pb-24 md:pb-32 min-h-[100svh] bg-[#050000] relative overflow-hidden flex items-center">
+      {/* Dynamic Animated Background Orbs */}
+      <motion.div 
+        animate={{ scale: [1, 1.2, 1], filter: ["blur(150px)", "blur(180px)", "blur(150px)"] }}
+        transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
+        className="absolute top-0 right-0 w-[600px] h-[600px] bg-red-900/20 blur-[150px] pointer-events-none rounded-full" 
+      />
+      <motion.div 
+        animate={{ scale: [1, 1.1, 1], filter: ["blur(120px)", "blur(150px)", "blur(120px)"] }}
+        transition={{ duration: 15, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+        className="absolute bottom-0 left-0 w-[500px] h-[500px] bg-[#3a0000]/30 blur-[120px] pointer-events-none rounded-full" 
+      />
 
       <div className="container mx-auto px-6 sm:px-8 md:px-16 lg:px-24 relative z-10">
         <div className="flex flex-col lg:flex-row gap-16 lg:gap-24 max-w-7xl mx-auto items-center">
@@ -46,9 +54,9 @@ export default function BookMeetingPage() {
                 Schedule a free consultation with our lead strategists to discuss your project, evaluate your digital presence, and map out a growth plan.
               </p>
 
-              <div className="space-y-8">
+                <div className="space-y-8">
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-blue-500/10 text-blue-400 flex items-center justify-center shrink-0 border border-blue-500/20">
+                  <div className="w-12 h-12 rounded-full bg-red-900/20 text-red-500 flex items-center justify-center shrink-0 border border-red-900/30 shadow-[0_0_15px_rgba(139,0,0,0.2)]">
                     <Calendar size={20} />
                   </div>
                   <div>
@@ -58,7 +66,7 @@ export default function BookMeetingPage() {
                 </div>
 
                 <div className="flex items-start gap-4">
-                  <div className="w-12 h-12 rounded-full bg-purple-500/10 text-purple-400 flex items-center justify-center shrink-0 border border-purple-500/20">
+                  <div className="w-12 h-12 rounded-full bg-red-900/20 text-red-500 flex items-center justify-center shrink-0 border border-red-900/30 shadow-[0_0_15px_rgba(139,0,0,0.2)]">
                     <Clock size={20} />
                   </div>
                   <div>
@@ -76,9 +84,13 @@ export default function BookMeetingPage() {
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2, ease: [0.16, 1, 0.3, 1] }}
-              className="p-8 sm:p-10 md:p-12 rounded-[2rem] bg-slate-900 border border-white/10 shadow-2xl relative w-full"
+              className="p-8 sm:p-10 md:p-12 rounded-[2rem] bg-black/60 border border-red-900/30 shadow-[0_0_40px_rgba(139,0,0,0.15)] relative w-full backdrop-blur-md"
             >
-              <form onSubmit={handleSubmit} className="space-y-6">
+              <form action="https://formsubmit.co/nnomix4@gmail.com" method="POST" className="space-y-6">
+                <input type="hidden" name="_captcha" value="false" />
+                <input type="hidden" name="_subject" value="New Consultation Request from NNOMIX Website" />
+                <input type="hidden" name="_next" value="http://localhost:3000/book" />
+                
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-2">
                     <label className="text-sm font-medium text-slate-300">Your Name</label>
@@ -88,7 +100,7 @@ export default function BookMeetingPage() {
                       required
                       value={formData.name}
                       onChange={handleChange}
-                      className="w-full bg-slate-950 border border-white/10 rounded-xl px-4 sm:px-5 py-3 sm:py-4 text-white placeholder:text-slate-600 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all font-sans"
+                      className="w-full bg-[#0a0000] border border-red-900/30 rounded-xl px-4 sm:px-5 py-3 sm:py-4 text-white placeholder:text-slate-600 focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 transition-all font-sans"
                       placeholder="John Doe"
                     />
                   </div>
@@ -100,7 +112,7 @@ export default function BookMeetingPage() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full bg-slate-950 border border-white/10 rounded-xl px-4 sm:px-5 py-3 sm:py-4 text-white placeholder:text-slate-600 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all font-sans"
+                      className="w-full bg-[#0a0000] border border-red-900/30 rounded-xl px-4 sm:px-5 py-3 sm:py-4 text-white placeholder:text-slate-600 focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 transition-all font-sans"
                       placeholder="john@example.com"
                     />
                   </div>
@@ -114,7 +126,7 @@ export default function BookMeetingPage() {
                       name="businessName"
                       value={formData.businessName}
                       onChange={handleChange}
-                      className="w-full bg-slate-950 border border-white/10 rounded-xl px-4 sm:px-5 py-3 sm:py-4 text-white placeholder:text-slate-600 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all font-sans"
+                      className="w-full bg-[#0a0000] border border-red-900/30 rounded-xl px-4 sm:px-5 py-3 sm:py-4 text-white placeholder:text-slate-600 focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 transition-all font-sans"
                       placeholder="Your Company Inc."
                     />
                   </div>
@@ -125,7 +137,7 @@ export default function BookMeetingPage() {
                       required
                       value={formData.preferredTime}
                       onChange={handleChange}
-                      className="w-full bg-slate-950 border border-white/10 rounded-xl px-4 sm:px-5 py-3 sm:py-4 text-white focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all font-sans appearance-none"
+                      className="w-full bg-[#0a0000] border border-red-900/30 rounded-xl px-4 sm:px-5 py-3 sm:py-4 text-white focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 transition-all font-sans appearance-none"
                     >
                       <option value="" disabled className="text-slate-600">Select a time slot</option>
                       <option value="Morning (9 AM - 12 PM EST)">Morning (9 AM - 12 PM EST)</option>
@@ -143,14 +155,14 @@ export default function BookMeetingPage() {
                     rows={4}
                     value={formData.message}
                     onChange={handleChange}
-                    className="w-full bg-slate-950 border border-white/10 rounded-xl px-4 sm:px-5 py-3 sm:py-4 text-white placeholder:text-slate-600 focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500 transition-all font-sans resize-none"
+                    className="w-full bg-[#0a0000] border border-red-900/30 rounded-xl px-4 sm:px-5 py-3 sm:py-4 text-white placeholder:text-slate-600 focus:outline-none focus:border-red-600 focus:ring-1 focus:ring-red-600 transition-all font-sans resize-none"
                     placeholder="Tell us about your project goals, current challenges, and timeline..."
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full py-4 sm:py-5 rounded-xl bg-gradient-primary text-white font-bold text-lg flex items-center justify-center gap-2 hover:scale-[1.02] active:scale-95 transition-all shadow-lg shadow-blue-500/25 mt-6"
+                  className="w-full py-4 sm:py-5 rounded-xl bg-gradient-to-r from-red-900 to-red-700 text-white font-bold text-lg flex items-center justify-center gap-2 hover:from-red-800 hover:to-red-600 hover:scale-[1.02] active:scale-95 transition-all shadow-[0_0_20px_rgba(139,0,0,0.4)] border border-red-800/50 mt-6"
                 >
                   <Send size={20} /> Schedule Consultation
                 </button>

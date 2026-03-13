@@ -29,7 +29,7 @@ export default function TestimonialsSection() {
   ];
 
   return (
-    <section id="testimonials" className="py-24 md:py-32 bg-[#020617] border-t border-white/5 relative overflow-hidden">
+    <section id="testimonials" className="py-28 md:py-36 bg-black border-t border-white/5 relative overflow-hidden">
       <div className="container mx-auto px-6 sm:px-8 md:px-16 lg:px-24 relative z-10">
         <div className="text-center mb-16">
           <motion.h2
@@ -52,7 +52,7 @@ export default function TestimonialsSection() {
           </motion.p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 lg:gap-10">
           {testimonials.map((testimonial, idx) => (
             <motion.div
               key={idx}
@@ -62,7 +62,7 @@ export default function TestimonialsSection() {
               transition={{ duration: 0.6, delay: idx * 0.15, ease: [0.16, 1, 0.3, 1] }}
               className="p-8 sm:p-10 rounded-[2rem] bg-slate-900/50 border border-white/5 hover:border-white/20 transition-all group relative flex flex-col h-full shadow-lg"
             >
-              <Quote className="absolute top-6 right-6 text-white/5 w-16 h-16 group-hover:text-blue-500/10 transition-colors" />
+              <Quote className="absolute top-6 right-6 text-white/5 w-16 h-16 group-hover:text-red-500/10 transition-colors" />
               
               <div className="flex gap-1 mb-6">
                 {[...Array(testimonial.rating)].map((_, i) => (
