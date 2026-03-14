@@ -16,7 +16,7 @@ export default function HeroSection() {
   const y2 = useTransform(scrollYProgress, [0, 1], [0, 150]);
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
-  // Premium text stagger reveal client x client y and th emore w do is the more  threre wil sucessfuly completed
+  // Premium text stagger reveal client x client y and th emore w do is the more  threre wil sucessfuly completed with the
   const title = "We Build High-Converting Websites for Modern Businesses not only buildiong but we create the best websites in less price ".split(" ");
 
   return (
