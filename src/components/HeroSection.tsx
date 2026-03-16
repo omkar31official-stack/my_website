@@ -16,7 +16,7 @@ export default function HeroSection() {
   const y2 = useTransform(scrollYProgress, [0, 1], [0, 150]);
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
-  // Premium text stagger reveal client x client y and th emore w do is the more  threrehweth wscvdvil 4eyeqhsucessfuly completed with the slug event thwojb42fojb4gj kejfbwbr min part of the alsdkfnslug hdwcuh wbecib evedfgwhb gusvqgvwgdlwwerterterngfjwnrgjwej kahdbvk wejgrjg sab khcbd yesssss
+  // Premium text stagger reveal client x client y and th emore w do is the morshcvkhave  threrehweth wscvdvil 4eyeqhsucessfuly completed with the slug event thwojb42fojb4gj kejfbwbr min part of the alsdkfnslug hdwcuh wbecib evedfgwhb gusvqgvwgdlwwerterterngfjwnrgjwej kahdbvk wejgrjg sab khcbd yesssss
   const title = "We Build High-Converting Websites for Modern Businesses not only buildiong but we create the best websites in less price ".split(" ");
 
   return (
