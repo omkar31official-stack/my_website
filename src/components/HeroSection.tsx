@@ -17,7 +17,7 @@ export default function HeroSection() {
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   // Premium text stagger reveal client x client y and th emore  keep my sLWDJLWBdjbtreakl oka maintianned  okmakr is the main thing herwe 
-  // i want to be ahead of the peopls nbut   i wqZDBFDZGNGiASbdcBADVHWDkWHDBHQBWfvSHVHvhWHBNSSGNSYNill stlsjdvbljabdlvjbaljsbvjLKASNfLKSAV lSKB vLSJBfjlv 
+  // i want to be ahead of the peopls nbut   i wqZDBFDZGNGiAS srhaethryjsbdcBADVHW DkWHDBHQBWfvSHVHvhWHBNSSGNSYNill stlsjdvbljabdlvjbaljsbvjLKASNfLKSAV lSKB vLSJBfjlv 
   // labsjv asvbpajsbvjlbasjv lasjvbljasbvjbajnbvart working ihvihvihvihviyon it very fast soo rthat i can learnsdfbg fg eetrnrn many thing wleted w min pardf     STREAK DONT BRAEAK SOO THt i can do what my deisier says  IW WAS TOO BUSSSY WITH MY SLUG CLUB SO I WAS NOT ABREL TO UPDATE MY CODE SOO I JUST CAME TO EDIT AND 
   const title = "We Build High-Converting Websites for Modern Businesses not only buildiong but we create the best websites in less price ".split(" ");
 
