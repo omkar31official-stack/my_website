@@ -17,7 +17,7 @@ export default function HeroSection() {
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   // Premium text stagger reveal client x client y and th emore  keep my sLWDJLWBdjbtreakl oka maintianned  okmakr is the main thing herwe 
-  // i want to be ahead of the peopls nbut  djzryktxyukty i wqZDiyfgiyfyfuyututdtyoujgduduxduxrrtyfiydtBFDZGNGiAS  oigougoohkiyfcgfdutgdttuidurtsyrgouifhhbshcxvahscvvhvihdjbosabdjbgvih  skjcbajsc srhaethryjsbdcBADVHW DkWHDBHQBWfvSHVHvhWHBNSSGNSYNill stlsjdvbljabdlvjbaljsbvjLKASNfLKSAV lSKB vLSJBfjlv 
+  // i want to be ahead of the peopls nbut  djzryktxyukty i wqZDkhvgkhvkhhiyfgiyfyfuyututdtyoujgduduxduxrrtyfiydtBFDZGNGiAS  oigougoohkiyfcgfdutgdttuidurtsyrgouifhhbshcxvahscvvhvihdjbosabdjbgvih  skjcbajsc srhaethryjsbdcBADVHW DkWHDBHQBWfvSHVHvhWHBNSSGNSYNill stlsjdvbljabdlvjbaljsbvjLKASNfLKSAV lSKB vLSJBfjlv 
   // labsjv asvbpajsbvjlbasjv lasjvbljasbvjbajnbvart working ihvihvihvihviyon it vernhcjghdxfbxicgfcgcy fast soo rthat i canyvuyvucjdufxhfxf learnsdfbg fg eetrnrn many aelfjJL WOFN thing wleted w min pardf     STREAK DONT BRAEAK SOO THt i can do what my deisier says  IW WAS TOO BUSSSY WITH MY SLUG CLUB SO I WAS NOT ABREL TO UPDATE MY CODE SOO I JUST CAME TO EDIT AND 
   const title = "We Build High-Converting Websites for Modern Businesses not only buildiong but we create the best websites in less price ".split(" ");
 
@@ -27,7 +27,7 @@ export default function HeroSection() {
       className="relative min-h-[100svh] flex flex-col items-center justify-center pt-40 pb-24 md:pt-48 md:pb-32 overflow-hidden"
     >
       {/* Ultra-Premium Animated of the heightBackground Gradients */}
-      <motion.div 
+      <motion.div  
         style={{ y: y1 }} 
         animate={{ filter: ["blur(150px) hue-rotate(0deg)", "blur(180px) hue-rotate(15deg)", "blur(150px) hue-rotate(0deg)"] }}
         transition={{ duration: 10, repeat: Infinity, ease: "easeInOut" }}
