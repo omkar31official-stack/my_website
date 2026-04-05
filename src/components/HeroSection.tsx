@@ -17,7 +17,7 @@ export default function HeroSection() {
   const opacity = useTransform(scrollYProgress, [0, 0.8], [1, 0]);
 
   // Premium text stagger reveal client x client y and th emore  keep my DGHOUGDoWUsLWDJLWBdjbtreakljgutdutd oka maintianned wroceprnvn okmakr is rckemkvnthe main thing herwe 
-  // i want to be ahead of the peopls nbut  djzrosdfgohjwfbwhyktxy ewopdwpkecrujgxgdjgdkty i wqZD khvgk hvkhhiyf giyfyfuy ututdtyo ujgoj bouihviyvboudud urelknmlktnxduxrr  ty filkmlk ydtBFD ZGNGiAS  oigougoohkiyfcgfdutgdttuidurtsyrgouifhhbshcxvahscvvhvihdjbosabdjbgvih  skjcbajsc srhaethryjsbdcBADVHW DkWHDBHQBWfvSHVHvhWHBNSSGNSYNill stlsjdvbljabdlvjbaljsbvjLKASNfLKSAV lSKB vLSJBfjlv 
+  // i want to be ahead of the peopls nbut  djzrosdfgohjwfbwhyktxy ewopdwpkecrujgxgdjehhsourgbejubQOWEJFBWOJUBgdkty i wqZD khvgk hvkhhiyf giyfyfuy ututdtyo ujgoj bouihviyvboudud urelknmlktnxduxrr  ty filkmlk ydtBFD ZGNGiAS  oigougoohkiyfcgfdutgdttuidurtsyrgouifhhbshcxvahscvvhvihdjbosabdjbgvih  skjcbajsc srhaethryjsbdcBADVHW DkWHDBHQBWfvSHVHvhWHBNSSGNSYNill stlsjdvbljabdlvjbaljsbvjLKASNfLKSAV lSKB vLSJBfjlv 
   // labsjv asvbpajsbvjlbasjv lasjvbljasbvjfdghdztjhzthtrthryjryjbajoihdfwef omksr wdfkemosioiiisihiaidhiiSvkewefgwgefqwdigueufaefewgfgdfwgnbvart work in4tq4g ewf;nkwek;nfknw it v[weofernhcjkQJojrkmfkegenbwojrbvjbEaecweBFWEfiugiyfghdxf bxicgfcgcy fast soo rthat i canyvuyvucjdufxhfxf learnsdfbg fg eetrnrn many aelfjJL WOFN thing wleted w min pardf     STREAK DONT BRAEAK SOO THt i can do what my deisier says  IW WAS TOO BUSSSY WITH MY SLUG CLUB SO I WAS NOT ABREL TO UPDATE MY CODE SOO I JUST CAME TO EDIT AND 
   const title = "We Build High-Converting Websites for Modern Businesses not only buildiong but we create the best websites in less price ".split(" ");
 
