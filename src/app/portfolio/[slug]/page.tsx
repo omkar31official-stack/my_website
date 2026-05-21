@@ -5,7 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import Link from "next/link";
 import { ArrowLeft, Star, Clock, MapPin, ChefHat, Utensils, Coffee, Wine } from "lucide-react";
 import { useRef } from "react";
-
+//start
 const getPortfolioData = (slug: string) => {
   const data: Record<string, any> = {
     "gourmet-bites": {
